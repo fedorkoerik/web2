@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <title>Seznam filmů</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Seznam filmů:</h1>
+    {% for film in filmy %}
+    <a href={% url "filmovy_detail" film.id %}> Název: {{film.nazev}} <br> </a>
+    {% endfor %}
+</body>
+</html>
