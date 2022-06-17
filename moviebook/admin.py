@@ -1,7 +1,6 @@
 from django.contrib import admin
-from .models import Film, Zanr, Rezie, Herec #Importujeme si modely
+from .models import Film, Zanr, Rezie, Herec 
 
-#Modely registrujeme
 
 admin.site.register(Film)
 admin.site.register(Zanr)
